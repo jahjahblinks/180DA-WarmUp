@@ -1,6 +1,7 @@
 # CREATED USING BELOW RESOURCE LINKS
 # https://opencv24-python-tutorials.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_colorspaces/py_colorspaces.html
 # https://cvexplained.wordpress.com/2020/04/28/color-detection-hsv/
+# https://answers.opencv.org/question/200861/drawing-a-rectangle-around-a-color-as-shown/
 
 import cv2
 import numpy as np
@@ -15,7 +16,7 @@ while(1):
     # Convert BGR to HSV
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    # define range of blue color in HSV
+    # (ALTERED) define range of blue color in HSV
     lower_blue = np.array([85,50,50])
     upper_blue = np.array([95,255,255])
 
